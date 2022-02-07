@@ -47,7 +47,7 @@ namespace TodoApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItem()
         {
-            GetRedisValues();
+            //GetRedisValues();
             SecretClientOptions options = new SecretClientOptions()
             {
                 Retry =
